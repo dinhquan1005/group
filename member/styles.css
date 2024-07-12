@@ -248,3 +248,21 @@ p {
 .full-description {
   display: none; /* Ẩn nội dung mô tả ban đầu */
 }
+
+@media all and (max-width: 480px) {
+  .image {
+    width: 100%; /* Điều chỉnh kích thước ảnh cho phù hợp màn hình nhỏ hơn */
+  }
+  .nav {
+    margin-left: 0; /* Điều chỉnh lại vị trí của menu navigation */
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .image {
+    width: 100%; /* Điều chỉnh kích thước ảnh cho phù hợp màn hình nhỏ hơn */
+  }
+  .nav {
+    margin-left: 0; /* Điều chỉnh lại vị trí của menu navigation */
+  }
+}
