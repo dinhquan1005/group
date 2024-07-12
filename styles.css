@@ -1,0 +1,478 @@
+html {
+  background-color: rgb(204, 252, 234);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+header .container {
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 768px) {
+  .image {
+    width: 100%; /* Điều chỉnh kích thước ảnh cho phù hợp màn hình nhỏ hơn */
+  }
+  .nav {
+    margin-left: 0; /* Điều chỉnh lại vị trí của menu navigation */
+  }
+}
+
+header .container .ico {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+header .container h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white; /* Màu chữ */
+}
+
+.txtelegantshadow {
+  font-family: cursive;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
+  margin-right: 450px;
+}
+
+.txtelegantshadow1 {
+  font-family: cursive;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 850px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative; /* Để submenu có thể hiển thị đúng vị trí */
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #aaa692;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #333;
+  border-radius: 3px;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Điều chỉnh chiều cao của phần tử */
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Chỉnh video để nó phủ đầy toàn bộ khu vực */
+  z-index: -1; /* Để video nằm dưới nội dung khác */
+  border-radius: 150px;
+}
+
+.video-background a:hover {
+  color: #ccc;
+}
+
+main {
+  width: 1000px;
+  margin: 150px auto 0 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 150px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 3px rgba(252, 118, 118, 0.8); /* Phủ viền ngoài màu đỏ */
+}
+
+.omp {
+  width: 1200px;
+  margin: 150px auto 0 auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Đặt màu nền trắng với độ trong suốt */
+  border-radius: 150px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 3px rgba(252, 118, 118, 0.8); /* Phủ viền ngoài màu đỏ */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.text_1 {
+  font-size: 75px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: -50px;
+  color: aqua;
+  letter-spacing: 0.15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
+  animation: lightning 0.2s infinite;
+}
+
+.text_2 {
+  font-size: 25px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: -30px;
+  color: aqua;
+  animation: lightning 0.2s infinite;
+}
+
+.text_3 {
+  font-size: 25px;
+  font-family: cursive;
+  text-align: center;
+  margin-top: -10px;
+  color: aqua;
+  animation: lightning 0.2s infinite;
+}
+
+.video-background p a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.zalo-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: aqua;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  color: white;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.image {
+  width: 850px; /* Độ rộng của ảnh */
+  height: auto; /* Chiều cao tự động điều chỉnh */
+  display: block; /* Để đảm bảo ảnh được hiển thị là một khối */
+  margin-left: auto; /* Căn giữa theo chiều ngang */
+  margin-right: auto; /* Căn giữa theo chiều ngang */
+}
+.image_2 {
+  margin-top: -550px; /* Điều chỉnh nếu cần */
+  width: 200px; /* Độ rộng của ảnh */
+  height: auto; /* Chiều cao tự động điều chỉnh */
+  display: block; /* Để đảm bảo ảnh được hiển thị là một khối */
+  margin-left: auto; /* Căn giữa theo chiều ngang */
+  margin-right: auto; /* Căn giữa theo chiều ngang */
+}
+
+.main {
+  background-image: url(./images/back.jpg);
+  background-position: center; /* Căn giữa ảnh */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  display: flex;
+  height: calc(100vh - 120px);
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+}
+
+.main div a {
+  text-decoration: none;
+  color: #842d17;
+}
+
+.pof_1 {
+  width: 450px;
+  height: 100px;
+  margin-top: 250px;
+  margin-left: 150px;
+  position: relative;
+  text-align: center;
+  background-color: #eef662;
+  border: 2px solid #000;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5%) rotate(-10deg);
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.pof_1 p {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #e65353;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #040404, -2px -2px 0 #000000, 2px -2px 0 #000000;
+}
+
+.pof_1::before,
+.pof_1::after {
+  content: "";
+  position: absolute;
+  width: 200px; /* Kích thước hình GIF nhỏ hơn */
+  height: 200px;
+  background-image: url("./images/hac.gif"); /* Đường dẫn đến hình ảnh GIF */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0; /*cho gif hiển thị ở dưới*/
+}
+
+.pof_1::before {
+  top: -90px; /* Điều chỉnh vị trí hình GIF ở trên */
+  right: 300px; /* Điều chỉnh vị trí hình GIF ở bên trái */
+}
+
+.pof_1::after {
+  bottom: -180px; /* Điều chỉnh vị trí hình GIF ở dưới */
+  left: 320px; /* Điều chỉnh vị trí hình GIF ở bên phải */
+}
+
+.pof_2 {
+  width: 300px;
+  height: 100px;
+  margin-top: 400px;
+  right: 330px;
+  position: relative;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  border-radius: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(5deg);
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.pof_2 p {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #e65353;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+    1px 1px 0 #040404, -2px -2px 0 #000000, 2px -2px 0 #000000;
+}
+
+#text_1 {
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  right: 140px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url(./images/tea-1.jpg); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+#text_2 {
+  width: 300px;
+  height: 100px;
+  bottom: 103px;
+  left: 305px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url(./images/ace-1.jpg); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+#text_3 {
+  width: 300px;
+  height: 100px;
+  margin-top: 75px;
+  left: -140px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url(./images/dof-1.jpg); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+#text_4 {
+  width: 300px;
+  height: 100px;
+  bottom: 105px;
+  left: 305px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-image: url(./images/sekai-1.jpg); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+#text_1,
+#text_2,
+#text_3,
+#text_4 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  text-shadow: -2px -2px 0 #000000;
+}
+#img_1,
+#img_2,
+#img_3,
+#img_4 {
+  width: 80px;
+  height: 80px;
+  top: 50px;
+  position: absolute;
+  right: 280px; /* Đặt ảnh vào vị trí cụ thể từ mép trái của #text_1 */
+  transform: translateY(-50%); /* Điều chỉnh dọc để căn giữa */
+  z-index: 1; /* Đặt z-index cao hơn để ảnh hiển thị trên các phần tử khác */
+  box-sizing: border-box; /* Tính cả độ dày của border vào kích thước của phần tử */
+  border: 2px solid #3b2424; /* Viền trắng để phủ lớp viền ngoài */
+  border-radius: 50%; /* Đảm bảo ảnh là hình tròn nếu cần */
+}
+
+@keyframes lightning {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff,
+      0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+  }
+  50% {
+    color: #000;
+    text-shadow: none;
+  }
+}
+
+.card,
+.card_1,
+.card_2 {
+  width: 400px;
+  margin-left: 20px;
+  height: 500px;
+  margin-top: 50px;
+  border: #000;
+  border-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.card {
+  background-image: url(./images/rin.jpg);
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+}
+
+.card_1 {
+  margin-left: 550px;
+  margin-bottom: -500px;
+  margin-top: -500px;
+  background-image: url(./images/se.jpg);
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+}
+.card_2 {
+  margin-left: 1100px;
+  margin-bottom: -500px;
+  margin-top: -500px;
+  background-image: url(./images/rai.jpg);
+  background-size: cover; /* Phù hợp kích thước hình nền */
+  background-position: center; /* Căn chỉnh vị trí hình nền */
+}

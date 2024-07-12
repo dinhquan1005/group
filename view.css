@@ -1,0 +1,151 @@
+html {
+  background-color: rgb(204, 252, 234);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+header .container {
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 1000;
+}
+
+@media only screen and (max-width: 768px) {
+  .image {
+    width: 100%; /* Điều chỉnh kích thước ảnh cho phù hợp màn hình nhỏ hơn */
+  }
+  .nav {
+    margin-left: 0; /* Điều chỉnh lại vị trí của menu navigation */
+  }
+}
+
+header .container .ico {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+
+header .container h1 {
+  font-size: 24px;
+  margin: 0;
+  color: white; /* Màu chữ */
+}
+
+.txtelegantshadow {
+  font-family: cursive;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
+  margin-right: 450px;
+}
+
+.txtelegantshadow1 {
+  font-family: cursive;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 0.15em;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 850px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative; /* Để submenu có thể hiển thị đúng vị trí */
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #aaa692;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #333;
+  border-radius: 3px;
+}
+
+.video-container {
+  position: fixed;
+  margin-top: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Điều chỉnh chiều rộng của video container */
+  max-width: 800px; /* Giới hạn chiều rộng tối đa */
+  height: auto; /* Đảm bảo tỷ lệ chiều cao phù hợp */
+  background-color: rgba(0, 0, 0, 0.7); /* Màu nền cho container video */
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 100; /* Để video hiển thị trước các phần tử khác */
+}
+
+.video-centered {
+  width: 100%; /* Chiều rộng của video */
+  height: auto; /* Đảm bảo tỷ lệ video */
+  display: block;
+  margin: 0 auto; /* Căn giữa video trong container */
+}
